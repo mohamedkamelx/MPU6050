@@ -16,7 +16,7 @@ void setup()
 
 void loop() 
 {
-  Wire.beginTransmission(MPU6050_ADDR);
+  Wire.beginTransmission(MPUaddress);
   Wire.write(0x3B);  // starting accelerometer
   Wire.endTransmission();
   
@@ -32,7 +32,7 @@ void loop()
 
   */ 
   
-  Wire.requestFrom(MPU6050_ADDR, 14);
+  Wire.requestFrom(MPUaddress, 14);
   
   
   

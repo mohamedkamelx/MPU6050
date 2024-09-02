@@ -49,7 +49,8 @@ void loop()
 
   }
 
-  Serial.print("yaw = "); Serial.println(yaw);
+  Serial.print("yaw = "); 
+  Serial.println(yaw);
 
   delay(1000); 
 }

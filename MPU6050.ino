@@ -9,7 +9,7 @@ void setup()
 
   Wire.beginTransmission(MPUaddress);
   Wire.write(0x6B);  // powering the sensor
-  Wire.write(0x00);  // waking it up from speed which is its default state
+  Wire.write(0x00);  // waking it up from sleed which is its default state
   Wire.endTransmission();
 }
 
